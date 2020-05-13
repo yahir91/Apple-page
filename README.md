@@ -2,7 +2,7 @@
 
 > In this project, I built a clone of an old landing page of apple. I had to use linear gradient to match the same background as the original page.
 
-![screenshot](./assets/youtube_preview.png)
+![screenshot](images/Screenshot.png)
 
 This project was built with HTML5 and CSS3 using the latest technologies like flexbox and css-grid.
 
