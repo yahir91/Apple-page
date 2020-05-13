@@ -1,0 +1,99 @@
+main {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-areas:
+    "main main main main"
+    "one two three four";
+  width: 78%;
+  margin: 0 auto;
+}
+
+.grid {
+}
+
+.main {
+  background: url(images/main-img.jpg) 50% 100% no-repeat;
+  height: 640px;
+  grid-area: main;
+}
+
+.one {
+  grid-area: one;
+  height: 200px;
+  background: url(images/image-one.jpg);
+}
+
+.two {
+  grid-area: two;
+  background: url(images/image-two.jpg);
+}
+
+.three {
+  grid-area: three;
+  background: url(images/image-three.jpg);
+}
+
+.four {
+  grid-area: four;
+  background: url(images/image-four.jpg);
+}
+
+nav {
+  position: fixed;
+  top: 10%;
+  left: 23%;
+  display: flex;
+  width: 980px;
+  height: 36px;
+  margin: 0 auto;
+  background: -webkit-gradient(
+    linear,
+    0 100%,
+    0 0,
+    from(#666),
+    color-stop(0.5, #5e5e5e),
+    color-stop(0.51, #707070),
+    to(#808080)
+  );
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
+  text-align: center;
+}
+
+nav div {
+  display: inline-block;
+  flex-grow: 1;
+  border: 1px solid;
+  vertical-align: middle;
+  position: relative;
+  vertical-align: center;
+}
+nav img {
+  position: relative;
+  top: 10%;
+}
+nav input {
+  position: relative;
+  top: 14%;
+}
+nav span {
+  position: relative;
+  top: 20%;
+}
+
+/* footer {
+  background-color: red;
+  display: flex;
+  height: 90px;
+  width: 78%;
+  margin: 0 auto;
+  align-items: center;
+}
+footer section {
+  flex-grow: 1;
+  border: 1px solid;
+  text-align: center;
+  vertical-align: middle;
+  height: 90px */
+  
+}
