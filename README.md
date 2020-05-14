@@ -6,6 +6,10 @@
 
 This project was built with HTML5 and CSS3 using the latest technologies like flexbox and css-grid.
 
+## Live link
+
+https://rawcdn.githack.com/yahir91/Apple-page/tree/apple
+
 ## Built With
 
 - HTML5
@@ -23,7 +27,7 @@ This project was built with HTML5 and CSS3 using the latest technologies like fl
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/yahir91/Apple-page/issues.
+Feel free to check the [issues page](https://github.com/yahir91/Apple-page/issues)
 
 ## Show your support
 

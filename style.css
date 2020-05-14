@@ -1,39 +1,44 @@
 main {
   display: grid;
   gap: 2px;
-  grid-template-columns: repeat(4 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
     "main main main main"
     "one two three four";
-  width: 1440px;
+  max-width: 1440px;
+
   margin: 0 auto;
 }
 
 .main {
   background: url(images/main-img.jpg) 50% 100% no-repeat;
-  height: 650px;
+  height: 680px;
   grid-area: main;
 }
 
 .one {
   grid-area: one;
+  min-width: 256px;
   height: 200px;
-  background: url(images/image-one.jpg);
+  background: url(images/image-one.jpg) 50% 100% no-repeat;
 }
 
 .two {
   grid-area: two;
-  background: url(images/image-two.jpg);
+  min-width: 256px;
+  background: url(images/image-two.jpg) 50% 100% no-repeat;
 }
 
 .three {
   grid-area: three;
-  background: url(images/image-three.jpg);
+  min-width: 256px;
+  background: url(images/image-three.jpg) 50% 100% no-repeat;
 }
 
 .four {
   grid-area: four;
-  background: url(images/image-four.jpg);
+  min-width: 256px;
+  background: url(images/image-four.jpg) 50% 100% no-repeat;
 }
 
 nav {
@@ -74,6 +79,7 @@ nav div {
 
 nav a {
   border-right: 0.02px solid #575757;
+  text-decoration: none;
 }
 
 .glass {
@@ -103,17 +109,24 @@ nav span {
   color: white;
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 220px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+
 h1,
 h2,
 p {
-  position: absolute;
   color: white;
-  text-align: center;
 }
 
 h1 {
-  left: 50%;
-  transform: translate(-50%, -50%);
   top: 250px;
   font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
@@ -122,18 +135,13 @@ h1 {
 }
 
 h2 {
-  left: 50%;
-  transform: translate(-50%, -50%);
   top: 350px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
 }
 
 p {
-  left: 50%;
-  transform: translate(-50%, -50%);
   top: 450px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
@@ -146,14 +154,15 @@ p img {
 }
 
 footer {
-  width: 1000px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 10px auto 0;
 }
 
 .second-footer {
   display: inline-block;
   margin-left: 90px;
-  font-weight: 400;
 }
 
 .bottom-footer {
@@ -177,14 +186,12 @@ footer span {
     Verdana,
     sans-serif;
   line-height: 12px;
-  font-weight: 400;
 }
 
 footer a {
   color: #08c;
   font-size: 10px;
   line-height: 12px;
-  font-weight: 400;
   font-family:
     "Lucida Grande",
     "Lucida Sans Unicode",
